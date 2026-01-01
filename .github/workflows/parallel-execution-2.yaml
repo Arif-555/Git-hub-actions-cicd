@@ -1,4 +1,4 @@
-name: Multi Job Workflow Demo
+name: Multi Job Workflow Demo 2
 
 on:
   workflow_dispatch: {}
@@ -11,7 +11,8 @@ jobs:
         run: echo "This is Job One"
 
   job-two:
+    needs: job-one
     runs-on: ubuntu-latest
     steps:
       - name: Job Two Step
-        run: echo "This is for  Job Two"
+        run: echo "This is Job Two and runs after Job One"
