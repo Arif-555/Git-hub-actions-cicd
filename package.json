@@ -1,0 +1,27 @@
+{
+  "name": "git-hub-actions-cicd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arif-555/Git-hub-actions-cicd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Arif-555/Git-hub-actions-cicd/issues"
+  },
+  "homepage": "https://github.com/Arif-555/Git-hub-actions-cicd#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
