@@ -1,4 +1,5 @@
-name: Node.js the Pipeline
+
+name: Node.js CI
 
 on:
   workflow_dispatch:
@@ -23,6 +24,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: .
 
       - name: Run tests
         run: npm test
+        working-directory: .
