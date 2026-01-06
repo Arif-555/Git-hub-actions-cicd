@@ -1,8 +1,7 @@
-
-name: Node.js CI
+name: Node.js CI Pipeline
 
 on:
-  workflow_dispatch:
+    workflow_dispatch: {}
 
 jobs:
   test:
@@ -12,20 +11,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Show workspace (debug)
-        run: |
-          pwd
-          ls -la
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 18
 
       - name: Install dependencies
         run: npm install
         working-directory: .
 
-      - name: Skip tests
-        run: echo "No tests configured"
+      - name: Run tests
+        run: npm test
         working-directory: .
