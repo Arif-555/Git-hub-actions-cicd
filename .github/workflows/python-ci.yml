@@ -23,7 +23,7 @@ jobs:
         working-directory: python-app-code
 
       - name: Run flake8 (Linting)
-        run: flake8 .
+        run: python -m flake8 .
         working-directory: python-app-code
 
       - name: Run black (Formatting check)
