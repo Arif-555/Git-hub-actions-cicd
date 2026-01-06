@@ -32,5 +32,5 @@ jobs:
         working-directory: python-app-code
 
       - name: Run tests
-        run: python -m pytest
+        run:  pytest
         working-directory: python-app-code
