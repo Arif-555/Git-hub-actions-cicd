@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"No tests yet\""
+    "test": "echo \"No test yet\""
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Arif-555/Git-hub-actions-cicd.git"
