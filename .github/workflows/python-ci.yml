@@ -1,4 +1,4 @@
-name: Python CI Pipeline
+name: Python Pipeline
 
 on:
   workflow_dispatch: {}
@@ -6,6 +6,9 @@ on:
 jobs:
   ci:
     runs-on: ubuntu-latest
+
+    env:
+      PYTHONPATH: .
 
     steps:
       - name: Checkout repository
@@ -32,8 +35,5 @@ jobs:
         working-directory: python-app-code
 
       - name: Run tests
-        run: |
-          ls -l
-          ls -l tests
-          python -m pytest -v tests/test_app.py
+        run: python -m pytest -v
         working-directory: python-app-code
