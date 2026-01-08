@@ -1,4 +1,4 @@
-name: Python CI Pipeline
+name: CI Pipeline
 
 on:
   workflow_dispatch: {}
@@ -6,9 +6,6 @@ on:
 jobs:
   ci:
     runs-on: ubuntu-latest
-
-    env:
-      PYTHONPATH: .
 
     steps:
       - name: Checkout repository
